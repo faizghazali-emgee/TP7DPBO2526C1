@@ -1,0 +1,261 @@
+/* ==========================================================================
+   1. GOOGLE FONTS & RESET BASE
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 1100px; /* Batas lebar ideal agar tidak melebar berlebihan */
+    margin: 0 auto;    /* Posisikan halaman tepat di tengah layar */
+}
+
+/* Menghilangkan elemen hr bawaan */
+hr {
+    display: none;
+}
+
+/* ==========================================================================
+   2. HEADER & NAVIGATION
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #ffffff;
+    padding: 20px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+header h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #10b981; /* Warna hijau emerald */
+    letter-spacing: -0.3px;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #94a3b8;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+nav a:hover, 
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   3. LAYOUT UTAMA (MAIN CONTAINER)
+   ========================================================================== */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Jarak spasi antar elemen vertikal */
+    width: 100%;
+}
+
+main h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+/* ==========================================================================
+   4. FORM CARD STYLE
+   ========================================================================== */
+.form-container {
+    background: #ffffff;
+    padding: 24px 28px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.form-container label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #334155;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="number"],
+.form-container input[type="date"],
+.form-container input[type="time"],
+.form-container select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.925rem;
+    color: #1e293b;
+    background-color: #f8fafc;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    margin-bottom: 18px;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+    outline: none;
+    border-color: #10b981;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+/* ==========================================================================
+   5. BUTTONS
+   ========================================================================== */
+button[type="submit"] {
+    width: 100%;
+    background-color: #10b981;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.925rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #059669;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.99);
+}
+
+.form-container a {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.form-container a:hover {
+    color: #0f172a;
+}
+
+/* ==========================================================================
+   6. TABEL MODERN & RESPONSIF
+   ========================================================================== */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+table th {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 14px 18px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.925rem;
+    color: #334155;
+    vertical-align: middle;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Tombol Aksi di Dalam Tabel (Edit & Hapus) */
+table td a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.825rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+table td a[href*="edit"] {
+    background-color: #eff6ff;
+    color: #2563eb;
+}
+
+table td a[href*="edit"]:hover {
+    background-color: #dbeafe;
+}
+
+table td a[href*="delete"] {
+    background-color: #fef2f2;
+    color: #dc2626;
+    margin-left: 4px;
+}
+
+table td a[href*="delete"]:hover {
+    background-color: #fee2e2;
+}
+
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    padding: 16px 0;
+}
