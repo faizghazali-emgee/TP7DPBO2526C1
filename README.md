@@ -151,7 +151,7 @@ Seluruh fungsi CRUD telah diuji dan berfungsi secara optimal di semua modul:
 
 ### 🟢 3. Modul Transaksi Penyewaan (`?page=penyewaan`)
 
-* **Create (Tambah):** Memilih dropdown Penyewa & Lapangan, memasukkan tanggal sewa dan durasi sewa. Sistem secara otomatis menghitung `total_harga` ($\text{durasi} \times \text{harga\_per\_jam}$).
+* **Create (Tambah):** Memilih dropdown Penyewa & Lapangan, memasukkan tanggal sewa dan durasi sewa. Sistem secara otomatis menghitung `total_harga` ($\text{durasi} \times \text{harga\per\jam}$).
 ![TCreate](Dokumentasi/TransaksiCreate.gif)
 
 * **Read (Tampil):** Menampilkan relasi gabungan (JOIN query) yang memuat nama penyewa, nama lapangan, tanggal sewa, durasi, dan total harga.
