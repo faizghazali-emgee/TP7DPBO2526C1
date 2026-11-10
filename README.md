@@ -141,7 +141,7 @@ Seluruh fungsi CRUD telah diuji dan berfungsi secara optimal di semua modul:
 ![PCreate](Dokumentasi/PenyewaCreate.gif)
 
 * **Read (Tampil):** Menampilkan daftar penyewa dalam bentuk tabel rapi.
-![PRead](Dokumentasi/Dokumentasi/Penyewa.png)
+![PRead](Dokumentasi/Penyewa.png)
 
 * **Update (Edit):** Mengupdate data identitas atau nomor HP penyewa.
 ![PUpdate](Dokumentasi/PenyewaUpdate.gif)
@@ -155,7 +155,7 @@ Seluruh fungsi CRUD telah diuji dan berfungsi secara optimal di semua modul:
 ![TCreate](Dokumentasi/TransaksiCreate.gif)
 
 * **Read (Tampil):** Menampilkan relasi gabungan (JOIN query) yang memuat nama penyewa, nama lapangan, tanggal sewa, durasi, dan total harga.
-![PRead](Dokumentasi/Dokumentasi/Dokumentasi/Transaksi.png)
+![PRead](Dokumentasi/Transaksi.png)
 
 * **Update (Edit):** Mengubah detail transaksi sewa (misal menambah durasi sewa atau mengganti lapangan).
 ![TUpdate](Dokumentasi/TransaksiUpdate.gif)
