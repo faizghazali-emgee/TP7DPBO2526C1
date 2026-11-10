@@ -121,13 +121,13 @@ TP7DPBO/
 
 Seluruh fungsi CRUD telah diuji dan berfungsi secara optimal di semua modul:
 
-### 🟢 1. Modul Lapangan (`?page=lapangan`)
+### 🟢 1. Modul Lapangan 
 
 * **Create (Tambah):** Mengisi nama lapangan, jenis olahraga, dan harga per jam $\rightarrow$ Data tersimpan ke tabel `lapangan`.
 ![LCreate](Dokumentasi/LapanganCreate.gif)
 
 * **Read (Tampil):** Menampilkan daftar tabel lapangan beserta detail tarif.
-<img src="Dokumentasi/Lapangan.png" width=200>
+![LRead](Dokumentasi/Lapangan.png)
 
 * **Update (Edit):** Mengubah data tarif/nama lapangan melalui form edit modal/halaman.
 ![LUpdate](Dokumentasi/LapanganUpdate.gif)
@@ -135,13 +135,13 @@ Seluruh fungsi CRUD telah diuji dan berfungsi secara optimal di semua modul:
 * **Delete (Hapus):** Menghapus data lapangan dari database (terproteksi jika ID lapangan sedang digunakan pada transaksi penyewaan).
 ![LDelete](Dokumentasi/LapanganDelete.gif)
 
-### 🟢 2. Modul Penyewa (`?page=penyewa`)
+### 🟢 2. Modul Penyewa 
 
 * **Create (Tambah):** Menambahkan data penyewa baru (Nama, No HP, Alamat).
 ![PCreate](Dokumentasi/PenyewaCreate.gif)
 
 * **Read (Tampil):** Menampilkan daftar penyewa dalam bentuk tabel rapi.
-<img src="Dokumentasi/Penyewa.png" width=200>
+![PRead](Dokumentasi/Dokumentasi/Penyewa.png)
 
 * **Update (Edit):** Mengupdate data identitas atau nomor HP penyewa.
 ![PUpdate](Dokumentasi/PenyewaUpdate.gif)
@@ -155,7 +155,7 @@ Seluruh fungsi CRUD telah diuji dan berfungsi secara optimal di semua modul:
 ![TCreate](Dokumentasi/TransaksiCreate.gif)
 
 * **Read (Tampil):** Menampilkan relasi gabungan (JOIN query) yang memuat nama penyewa, nama lapangan, tanggal sewa, durasi, dan total harga.
-<img src="Dokumentasi/Transaksi.png" width=200>
+![PRead](Dokumentasi/Dokumentasi/Dokumentasi/Transaksi.png)
 
 * **Update (Edit):** Mengubah detail transaksi sewa (misal menambah durasi sewa atau mengganti lapangan).
 ![TUpdate](Dokumentasi/TransaksiUpdate.gif)
